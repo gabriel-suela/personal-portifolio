@@ -23,7 +23,7 @@ export default function Intro() {
         staggerChildren: 0.05,
         staggerDirection: -1,
         display: {
-          when: "afterChildren", //
+          when: "afterChildren",
           delay: 0.5,
         },
       },

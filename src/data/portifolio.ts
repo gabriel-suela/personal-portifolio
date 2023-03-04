@@ -1,7 +1,7 @@
 export type PortifolioProps ={
     title: string,
     imgUrl: string,
-    stack: string[],
+    description: string,
     link: string
 }
 
@@ -9,19 +9,19 @@ export const portifolio = [
     {
       title: 'Future Eats',
       imgUrl: '/assets/future-eats.jpeg',
-      stack: ['React', 'Styled-Components', 'Axios', 'Material-UI'],
+      description: "Aplicação para mobile inspirada no aplicativo iFood.",
       link: 'https://github.com/gabriel-suela/future-eats',
     },
     {
       title: 'LabeX',
       imgUrl: '/assets/LabeX.png',
-      stack: ['React', 'Styled-Components', 'Axios'],
+      description: "Projeto em react que visa trabalhar o consumo de uma API REST.",
       link: 'https://github.com/gabriel-suela/labe-x',
     },
     {
       title: 'Kanban App',
       imgUrl: '/assets/kanban.jpeg',
-      stack: ['React', 'Typescript', 'Drag and Drop', 'Chakra-UI'],
+      description: "A modern drag and droppable kanban board",
       link: 'https://github.com/gabriel-suela/kanban-app',
     },
   ]

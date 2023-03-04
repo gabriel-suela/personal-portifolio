@@ -1,13 +1,13 @@
 import React from "react";
 import { PortifolioProps } from "../data/portifolio";
 
-function PortfolioItem({ title, imgUrl, stack, link }: PortifolioProps) {
+function PortfolioItem({ title, imgUrl, description, link }: PortifolioProps) {
   return (
     <a
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="border border-stone-900 dark:border-white  rounded-md overflow-hidden"
+      className="rounded-md overflow-hidden"
     >
       <img
         src={imgUrl}
@@ -15,18 +15,11 @@ function PortfolioItem({ title, imgUrl, stack, link }: PortifolioProps) {
         className="relative w-full md:h-48 object-cover cursor-pointer"
       />
       <div className="w-full p-4">
-        <h3 className="text-lg md:text-xl dark:text-white mb-2 md:mb-3 font-bold text-center ">
+        <h3 className="text-base md:text-xl dark:text-white mb-2 md:mb-3 font-semibold text-center ">
           {title}
         </h3>
-        <p className="flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm dark:text-white ">
-          {stack.map((item, index) => (
-            <span
-              key={index}
-              className="inline-block px-2 py-1 font-semibold border border-stone-900 dark:border-white rounded-md"
-            >
-              {item}
-            </span>
-          ))}
+        <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">
+          {description}
         </p>
       </div>
     </a>
