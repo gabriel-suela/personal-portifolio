@@ -9,13 +9,13 @@ export const portifolio = [
     {
       title: 'Future Eats',
       imgUrl: '/assets/future-eats.jpeg',
-      description: "Aplicação para mobile inspirada no aplicativo iFood.",
+      description: "Mobile application inspired by iFood",
       link: 'https://github.com/gabriel-suela/future-eats',
     },
     {
       title: 'LabeX',
       imgUrl: '/assets/LabeX.png',
-      description: "Projeto em react que visa trabalhar o consumo de uma API REST.",
+      description: "Space travel management platform",
       link: 'https://github.com/gabriel-suela/labe-x',
     },
     {
